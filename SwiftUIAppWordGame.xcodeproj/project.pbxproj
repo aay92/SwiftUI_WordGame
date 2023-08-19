@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		5B613C472A90BFB300AD6F86 /* SwiftUIAppWordGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C462A90BFB300AD6F86 /* SwiftUIAppWordGameApp.swift */; };
-		5B613C492A90BFB300AD6F86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C482A90BFB300AD6F86 /* ContentView.swift */; };
+		5B613C492A90BFB300AD6F86 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C482A90BFB300AD6F86 /* StartView.swift */; };
 		5B613C4B2A90BFB400AD6F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B613C4A2A90BFB400AD6F86 /* Assets.xcassets */; };
 		5B613C4E2A90BFB400AD6F86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B613C4D2A90BFB400AD6F86 /* Preview Assets.xcassets */; };
+		5B613C562A90C95B00AD6F86 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C552A90C95B00AD6F86 /* TitleView.swift */; };
+		5B613C582A90CA8100AD6F86 /* WordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C572A90CA8100AD6F86 /* WordTextField.swift */; };
+		5B613C5B2A90CCBA00AD6F86 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C5A2A90CCBA00AD6F86 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B613C432A90BFB300AD6F86 /* SwiftUIAppWordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAppWordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B613C462A90BFB300AD6F86 /* SwiftUIAppWordGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAppWordGameApp.swift; sourceTree = "<group>"; };
-		5B613C482A90BFB300AD6F86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B613C482A90BFB300AD6F86 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		5B613C4A2A90BFB400AD6F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B613C4D2A90BFB400AD6F86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B613C552A90C95B00AD6F86 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		5B613C572A90CA8100AD6F86 /* WordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTextField.swift; sourceTree = "<group>"; };
+		5B613C5A2A90CCBA00AD6F86 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				5B613C462A90BFB300AD6F86 /* SwiftUIAppWordGameApp.swift */,
-				5B613C482A90BFB300AD6F86 /* ContentView.swift */,
+				5B613C542A90C94600AD6F86 /* Components */,
+				5B613C592A90CC8C00AD6F86 /* Views */,
 				5B613C4A2A90BFB400AD6F86 /* Assets.xcassets */,
 				5B613C4C2A90BFB400AD6F86 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				5B613C4D2A90BFB400AD6F86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B613C542A90C94600AD6F86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B613C552A90C95B00AD6F86 /* TitleView.swift */,
+				5B613C572A90CA8100AD6F86 /* WordTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B613C592A90CC8C00AD6F86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B613C482A90BFB300AD6F86 /* StartView.swift */,
+				5B613C5A2A90CCBA00AD6F86 /* GameView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B613C492A90BFB300AD6F86 /* ContentView.swift in Sources */,
+				5B613C492A90BFB300AD6F86 /* StartView.swift in Sources */,
 				5B613C472A90BFB300AD6F86 /* SwiftUIAppWordGameApp.swift in Sources */,
+				5B613C562A90C95B00AD6F86 /* TitleView.swift in Sources */,
+				5B613C582A90CA8100AD6F86 /* WordTextField.swift in Sources */,
+				5B613C5B2A90CCBA00AD6F86 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +301,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project3.SwiftUIAppWordGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +333,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +342,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = project3.SwiftUIAppWordGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
