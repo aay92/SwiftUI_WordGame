@@ -7,6 +7,15 @@
 
 import Foundation
 
+enum WordError: Error {
+    case theSameWord
+    case bofforeWord
+    case littleWord
+    case wrongWord
+    case undefinedError
+    
+}
+
 class GameViewModel: ObservableObject { ///ObservableObject - реактивщина
     
     @Published var player1: Player
@@ -23,20 +32,21 @@ class GameViewModel: ObservableObject { ///ObservableObject - реактивщи
         
     }
     
-    func validate(word: String) -> Bool {
+    func validate(word: String) throws {
         let word = word.uppercased()
         guard word != self.word else {
             print("Думаешь самый умный, составленное слово не должно быть исходным")
-            return false }
+            throw WordError.theSameWord
+        }
         guard !(words.contains(word)) else {
             print("Прояви фонтазию и придумай новое слово")
-            return false
+            throw WordError.bofforeWord
         }
         guard word.count > 1 else {
             print("Слишком короткое слово")
-            return false
+            throw WordError.littleWord
         }
-        return true
+        return
     }
     
     func wordToCharts(word: String) -> [Character] {
@@ -47,8 +57,13 @@ class GameViewModel: ObservableObject { ///ObservableObject - реактивщи
         return charts
     }
     
-    func check(word: String) -> Int {
-        guard self.validate(word: word) else { return 0 }
+    func check(word: String) throws -> Int {
+        do {
+            try self.validate(word: word)
+        } catch {
+           throw error
+        }
+        
         var bidWordArray = wordToCharts(word: self.word)
         var smallWordArray = wordToCharts(word: word)
         
@@ -63,8 +78,7 @@ class GameViewModel: ObservableObject { ///ObservableObject - реактивщи
                 }
                 bidWordArray.remove(at: i)
             } else {
-                print("Такое слово не может быть составленно")
-                return 0
+                throw WordError.wrongWord
             }
         }
         
@@ -75,9 +89,9 @@ class GameViewModel: ObservableObject { ///ObservableObject - реактивщи
         
         words.append(result)
         if isFirst {
-            player1.add(score: result.count)
+            player1.score += result.count
         } else {
-            player2.add(score: result.count)
+            player2.score += result.count
         }
         
         isFirst.toggle()

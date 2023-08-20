@@ -9,9 +9,5 @@ import Foundation
 
 struct Player {
     let name: String
-    private(set) var score = 0 ///private(set) - можно менять переменную только внутри этой структуры
-    
-    mutating func add(score: Int) {
-        self.score += score
-    }
+    var score = 0 ///private(set) - можно менять переменную только внутри этой структуры
 }

@@ -16,6 +16,7 @@
 		5B613C5B2A90CCBA00AD6F86 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B613C5A2A90CCBA00AD6F86 /* GameView.swift */; };
 		5B8BB3242A91F81800F2DF77 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8BB3232A91F81800F2DF77 /* Player.swift */; };
 		5B8BB3282A91F8F200F2DF77 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8BB3272A91F8F200F2DF77 /* GameViewModel.swift */; };
+		5B8BB32A2A928B2C00F2DF77 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8BB3292A928B2C00F2DF77 /* WordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5B613C5A2A90CCBA00AD6F86 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		5B8BB3232A91F81800F2DF77 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		5B8BB3272A91F8F200F2DF77 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		5B8BB3292A928B2C00F2DF77 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				5B613C552A90C95B00AD6F86 /* TitleView.swift */,
 				5B613C572A90CA8100AD6F86 /* WordTextField.swift */,
+				5B8BB3292A928B2C00F2DF77 /* WordCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				5B613C562A90C95B00AD6F86 /* TitleView.swift in Sources */,
 				5B613C582A90CA8100AD6F86 /* WordTextField.swift in Sources */,
 				5B8BB3242A91F81800F2DF77 /* Player.swift in Sources */,
+				5B8BB32A2A928B2C00F2DF77 /* WordCell.swift in Sources */,
 				5B613C5B2A90CCBA00AD6F86 /* GameView.swift in Sources */,
 				5B8BB3282A91F8F200F2DF77 /* GameViewModel.swift in Sources */,
 			);
